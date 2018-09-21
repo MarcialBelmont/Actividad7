@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intento de Aplicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de telefono"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/botonTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="intentTelefono"
+        android:text="Marcar"/>
+
+    <EditText
+        android:id="@+id/pagina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagina web"
+        android:inputType="textUri"/>
+
+    <Button
+        android:id="@+id/botonPagina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="intentWeb"
+        android:text="Abrir pagina web"/>
+
+    <Button
+        android:id="@+id/botonMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="intentMaps"
+        android:text="Abrir mapas"/>
+
+</LinearLayout>
